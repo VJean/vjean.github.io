@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Jean Vintache &middot; Accueil</title>
+    <title>Jean Vintache &middot; Projets</title>
     <base href="https://jean.vintache.eu/">
     <link rel="stylesheet" href="css/spectre.css">
     <link rel="stylesheet" href="css/spectre-exp.min.css">
@@ -44,6 +44,9 @@
                   <li class="breadcrumb-item">
                     <a href="index.html">Accueil</a>
                   </li>
+                  <li class="breadcrumb-item">
+                    <a href="projets.html">Projets</a>
+                  </li>
                 </ul>
             </div> <!-- breadcrumbs -->
             <div class="column text-right">
@@ -58,36 +61,52 @@
     <div class="columns">
         <div class="column col-11 col-mx-auto">
             <section class="text-justify">
-                <p>Bonjour ! &#128075;</p>
-                <p>Je m'appelle Jean.</p>
-                <p>Je suis un ingénieur en informatique diplômé de l'Université de Technologie de Compiègne. Depuis septembre 2016, je travaille sur des sujets d'indexation et de stockage distribué pour de grands volumes de données, en effectuant des tâches de recherche et développement, d'intégration, d'exploitation et de maintien en conditions opérationnelles.</p>
-                <p>Ce site propose une présentation succinte de mon parcours professionnel, ainsi que quelques articles à propos de certains projets personnels.</p>
-                <p>Je suis joignable sur <a href="https://www.linkedin.com/in/jeanvintache">LinkedIn</a> ou bien tout simplement via mail à l'adresse <code>prénom@nom.eu</code>, en remplaçant <code>prénom</code> et <code>nom</code>, par&#8230; les miens.</p>
-                <p class="text-center">Bonne visite !</p>
+                <p>Je développe principalement en Python (ou en Bash, si Python n'apporte pas une grande plus-value et que le projet en question se résume à quelques scripts). Pour des projets nécessitant un serveur web, j'utilise Python/Flask.</p>
+                <p>Mon environnement de développement peut se résumer à un Arch Linux (<a href="https://github.com/VJean/dotfiles">mes dotfiles sont ici</a>), vim, Sublime Text, Pycharm, et une Raspberry.</p>
+                <p>Plus récemment, je m'intéresse à Rust ainsi qu'aux bases de données orientées graphes, via Neo4j.</p>
+                <p>En général, si je me lance dans un projet c'est que :
+                <ol>
+                    <li>une solution existe sûrement déjà, mais je préfère apprendre en la créant et en la mettant en place moi-même</li>
+                    <li>c'est l'occasion d'apprendre de nouvelles technos ou techniques</li>
+                    <li>il me sera probablement utile</li>
+                </ol></p>
+
+<!-- Un article = un titre, une date, un lien vers Github, le(s) language(s), ce que j'ai appris, et la présentation en elle-même -->
+            <article>
+                <h3>weather-summary &#9925; <small>(fin 2019)</small></h3>
+                <p><a href="https://github.com/VJean/weather-summary"><i class="fab fa-github-square"></i> VJean/weather-summary.git</a> <small class="label label-rounded">Python</small> <small class="label label-rounded">Pushover</small> <small class="label label-rounded">API</small></p>
+                <div class="columns">
+                    <div class="column col-12">
+                        <p>Un script déployé en crontab m'envoie tous les matins la prévision météo pour les prochaines 24h.</p>
+                        <p>Le script est configuré par un fichier .ini, qui permet de spécifier, entre autres, la latitude et la longitude de la  prévision, les unités affichées, ou encore la langue du message.</p>
+                    </div>
+                    <div class="column col-12">
+                        <figure class="figure">
+                            <img class="img-responsive p-centered" src="img/weather.png" alt="weather noti">
+                            <figcaption class="figure-caption text-center">Quelques notifications passées</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>100 <small>(mai 2020)</small></h3>
+                <p><a href="https://github.com/VJean/100"><i class="fab fa-github-square"></i> VJean/100.git</a> <small class="label label-rounded">Python</small> <small class="label label-rounded">matplotlib</small></p>
+                <div class="columns">
+                    <div class="column col-12">
+                        <p>Mini-projet sur le côté pendant le confinement de début 2020, où j'ai décidé de mettre en image mes éventuels progrès sportifs.</p>
+                        <p>Je reporte les différents temps dans un fichier csv, qui est ensuite lu par un script Python qui le met en forme avec Matplotlib.</p>
+                        <p>Apparemment, j'ai mis quelques jours à trouver mon rythme.</p>
+                    </div>
+                    <div class="column col-12">
+                        <figure class="figure">
+                            <img class="img-responsive p-centered" src="img/100.png" alt="the result figure">
+                            <figcaption class="figure-caption text-center">Le graphe de résultats</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
             </section>
         </div> <!-- column -->
-        <div class="column col-6 col-sm-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title h5">Mon parcours</div>
-                <div class="card-subtitle text-gray">Un aperçu de mon parcours professionnel</div>
-              </div>
-              <div class="card-footer">
-                <a href="./parcours.html" class="btn btn-primary"><i class="icon icon-forward"></i> Voir</a>
-              </div>
-            </div>
-        </div>
-        <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title h5">Mes <small>(petits)</small> projets</div>
-                <div class="card-subtitle text-gray">Articles à propos de certains de mes projets</div>
-              </div>
-              <div class="card-footer">
-                <a href="./projets.html" class="btn btn-primary"><i class="icon icon-forward"></i> Voir</a>
-              </div>
-            </div>
-        </div>
     </div> <!-- columns -->
 </div> <!-- main container -->
 <footer>

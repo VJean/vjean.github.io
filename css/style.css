@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #FEFDFE;
+    --bg-secondary-color: #EEEEEE;
+    --font-color: #272727;
+    --font-lighter-color: #A9A9A9;
+    --accent-color: #0E79B2;
+    --accent-lighter-color: #AEF2F7;
+    --accent-darker-color: #0B6399;
+    --border-color: #3294C1;
+    --hero-bg-color: #FEFDFE;
+    --hero-font-color: #272727;
+}
+
+[data-theme="dark"] {
+    --bg-color: #272727;
+    --bg-secondary-color: #424242;
+    --font-color: #F7F5F8;
+    --font-lighter-color: #636264;
+    --accent-color: #D88C9A;
+    --accent-lighter-color: #602A2E;
+    --accent-darker-color: #E09FAD;
+    --border-color: #B6707B;
+    --hero-bg-color: #272727;
+    --hero-font-color: #F7F5F8;
+}
+
+/** Custom styles **/
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 100%;
+    min-height: 100%;
+    font-size: .9rem;
+}
+
+header {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--hero-bg-color);
+}
+
+header #header-banner {
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding-top: 2rem;
+    color: var(--font-lighter-color);
+}
+
+figure > img {
+    opacity: 0.95;
+}
+
+/** overwriting Spectre styles **/
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--hero-font-color);
+
+}
+
+code {
+    color: var(--font-color);
+    background-color: var(--bg-secondary-color);
+}
+
+.label {
+    background-color: var(--accent-lighter-color);
+    color: var(--accent-darker-color);
+}
+
+.btn.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+a, a:visited, .btn.btn-link {
+    color: var(--accent-color);
+}
+
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+    color: var(--accent-darker-color);
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background-color: var(--accent-darker-color);
+    border-color: var(--border-color);
+    color: var(--bg-color);
+}
+
+.divider {
+    border-top-color: var(--accent-lighter-color);
+}
+
+.timeline .timeline-item .timeline-icon::before {
+    border-color: var(--accent-color);
+}
+
+.timeline .timeline-item .timeline-icon.icon-lg {
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+}
+
+.card {
+    margin: .4rem;
+    background-color: var(--bg-color);
+    border-color: var(--accent-color);
+}
