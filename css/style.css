@@ -84,6 +84,12 @@ a, a:visited, .btn.btn-link {
     color: var(--accent-color);
 }
 
+/* remove decoration from links in section headers */
+h2 > a {
+    text-decoration: none !important;
+    color: var(--font-color) !important;
+}
+
 .btn.btn-link:focus,
 .btn.btn-link:hover {
     color: var(--accent-darker-color);
