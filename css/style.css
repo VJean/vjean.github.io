@@ -53,6 +53,10 @@ footer {
     color: var(--font-lighter-color);
 }
 
+article {
+    margin-top: 5rem;
+}
+
 figure > img {
     opacity: 0.95;
 }
